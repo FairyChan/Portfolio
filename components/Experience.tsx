@@ -1,109 +1,65 @@
 const experiences = [
   {
     number: "01",
-    company: "NeoNiche",
-    role: "Management Trainee — Client Servicing",
-    period: "Jun 2026 — Sept 2026",
-    category: "Experiential Marketing & Brand Experience",
-    description:
-      "Supported experiential marketing and brand activation briefs across automotive and corporate brands, contributing to research, ideation, pitching, spatial planning and execution.",
+    company: "Triburg",
+    role: "Product Development & Merchandising Intern",
+    period: "Dec 2025 — Apr 2026",
+    description: "Supported product development and merchandising operations across seasons, with hands-on exposure to the end-to-end sampling and approval lifecycle.",
     highlights: [
-      "15+ experiential marketing briefs",
-      "4–5 project execution plans",
-      "Concept & ideation decks",
-      "Spatial planning & guest journeys",
-      "Bentley Continental GTS private preview",
-      "250-attendee Sharp Partner Meet",
+      "End-to-end sample lifecycle: proto, fit & pre-production",
+      "Lab dips, strike-offs & approvals",
+      "Vendor & internal team coordination",
+      "Timely colour approvals & production readiness",
+      "Merchandising trackers: sample status, airway bills & approvals",
+      "Buyer communication support",
+      "BOMs & T&A calendar exposure",
+      "Style-wise PD documentation & approval files",
     ],
   },
   {
     number: "02",
-    company: "Triburg",
-    role: "Product Development & Merchandising Intern",
-    period: "Dec 2025 — Apr 2026",
-    category: "American Eagle",
-    description:
-      "Supported product development and merchandising for American Eagle, with primary exposure to dresses and men's shirts across the sampling and product development lifecycle.",
-    highlights: [
-      "500+ styles supported",
-      "6 India-based vendors",
-      "30–40 samples per sampling stage",
-      "Sample approvals",
-      "Lab dips & strike-offs",
-      "BOM & T&A support",
-    ],
-  },
-  {
-    number: "03",
     company: "House of Kosha",
     role: "E-commerce Intern",
     period: "Jun 2025 — Nov 2025",
-    category: "E-commerce & Online Visual Merchandising",
-    description:
-      "Worked across e-commerce operations, product presentation, marketplace outreach, customer engagement and digital visibility for the luxury accessories brand.",
+    description: "Worked across website optimization, online visual merchandising, marketplace outreach, influencer collaborations and digital marketing.",
     highlights: [
-      "250–300 products / SKUs",
-      "50+ marketplace & retail outreach",
-      "10 distribution partnerships",
-      "Shopify & online VM",
-      "150+ influencer outreach",
-      "400+ customer database",
+      "Shopify website optimization",
+      "Online visual merchandising",
+      "Marketplace outreach with premium retailers: Agashe & Carma",
+      "Influencer collaborations",
+      "Brand partnership coordination",
+      "SEO-driven content",
+      "Google Ads & Merchant Center support",
+      "Exhibition planning & vendor logistics",
     ],
   },
 ];
 
 export default function Experience() {
   return (
-    <section
-      id="experience"
-      className="border-t border-[#d9d5cd] px-6 py-24 md:px-10 md:py-32"
-    >
+    <section id="experience" className="border-t border-[#d9d5cd] px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-[1400px]">
         <div className="mb-20">
-          <p className="text-xs uppercase tracking-[0.3em] text-[#77736c]">
-            02 — Experience
+          <p className="text-xs uppercase tracking-[0.3em] text-[#77736c]">03 — Experience</p>
+          <p className="mt-6 max-w-xl text-sm leading-7 text-[#77736c]">
+            Hands-on experience spanning product development, merchandising, e-commerce, digital marketing and the operational details that move fashion products from idea to market.
           </p>
         </div>
 
         <div>
           {experiences.map((experience) => (
-            <article
-              key={experience.company}
-              className="grid gap-8 border-t border-[#d9d5cd] py-12 md:grid-cols-[0.1fr_0.25fr_0.65fr]"
-            >
-              <span className="text-xs text-[#77736c]">
-                {experience.number}
-              </span>
-
+            <article key={experience.company} className="grid gap-8 border-t border-[#d9d5cd] py-14 md:grid-cols-[0.1fr_0.25fr_0.65fr]">
+              <span className="text-xs text-[#77736c]">{experience.number}</span>
               <div>
-                <h3 className="font-editorial text-4xl">
-                  {experience.company}
-                </h3>
-
-                <p className="mt-2 text-xs uppercase tracking-[0.15em] text-[#77736c]">
-                  {experience.period}
-                </p>
+                <h3 className="font-editorial text-4xl">{experience.company}</h3>
+                <p className="mt-3 text-xs uppercase tracking-[0.15em] text-[#77736c]">{experience.period}</p>
               </div>
-
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-[#77736c]">
-                  {experience.category}
-                </p>
-
-                <h4 className="mt-3 text-lg font-medium">
-                  {experience.role}
-                </h4>
-
-                <p className="mt-5 max-w-2xl text-sm leading-7 text-[#77736c]">
-                  {experience.description}
-                </p>
-
-                <div className="mt-7 flex max-w-3xl flex-wrap gap-2">
+                <h4 className="text-lg font-medium">{experience.role}</h4>
+                <p className="mt-5 max-w-2xl text-sm leading-7 text-[#77736c]">{experience.description}</p>
+                <div className="mt-7 flex max-w-4xl flex-wrap gap-2">
                   {experience.highlights.map((highlight) => (
-                    <span
-                      key={highlight}
-                      className="border border-[#d9d5cd] px-3 py-2 text-[10px] uppercase tracking-[0.12em]"
-                    >
+                    <span key={highlight} className="border border-[#d9d5cd] px-3 py-2 text-[10px] uppercase tracking-[0.12em]">
                       {highlight}
                     </span>
                   ))}
